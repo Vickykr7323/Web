@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+</head>
+<body>
+    <h2>Table Tag</h2>
+
+    <!-- The <table> HTML element represents tabular data—that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. -->
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priyansh</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sanjay</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+
+    <h2>Add Border and Width</h2>
+    <table border="2" width="100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priyansh</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sanjay</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+
+    <h2>Add Border Collapse</h2>
+    <table border-collapse="Collapse" >
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priyansh</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sanjay</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+    <h2>How to define table cells that span more than one row or one column:</h2>
+    <table border="2">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th colspan="2">Phone</th>
+        </tr>
+        <tr>
+          <td>Ram Singh</td>
+          <td>ram.office@123.gmail.com</td>
+          <td>9857463210</td>
+          <td>8965741452</td>
+        </tr>
+      </table>
+
+      <h3>Cell that spans two rows:</h3>
+    <table border="2">
+        <tr>
+            <th>Name:</th>
+            <td>Ram Singh</td>
+        </tr>
+        <tr>
+            <th>Email:</th>  
+            <td>ram.office@123.gmail.com</td>      
+        </tr>  
+        <tr>
+            <th rowspan="2">Phone:</th>
+            <td>99856471250</td>
+        </tr>
+        <tr>
+            <td>88569748569</td>
+        </tr>
+    </table>
+
+    <h2>An HTML table with a thead , tbody , and a tfoot element:</h2>
+    <table border="2">
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>10000</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>8000</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>18000</td>
+          </tr>
+        </tfoot>
+      </table>
+</body>
+</html>
