@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            text-decoration:none;
+            margin-bottom: 20px;
+        }
+        h2{
+         font-family: Sans-serif; 
+         font-size: 24px;     
+         font-style: normal; 
+         font-weight: bold; 
+         color: rgb(0, 0, 226);
+         text-align: center; 
+         text-decoration: underline
+        }
+        table{
+         padding: 10px;
+         margin: 10px;
+         width: 100%;
+         font-family: verdana; 
+         color:white; 
+         font-size: 16px; 
+         font-style: normal;
+         font-weight: bold;
+         background: linear-gradient(to bottom, #4eb0d1 0%, #bb3076 100%);  
+         border: 2px solid #f12525;
+         border-style: solid;
+          
+        }
+        table.inner{
+         border: 10px
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"], select, textarea {
+            width: calc(100% - 24px);
+            padding: 10px 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 100px;
+            padding: 10px;
+            margin: 10px 5px 0;
+            border: none;
+            border-radius: 4px;
+            background-color: #0056b3;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+    <form action="success.html">
+        
+            <table align="center">
+                <center><h1>Student Registration Form</h1></center>
+                <!--------------------- First Name ------------------------------------------>
+                <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" name="name" maxlength="30" placeholder="Enter Your Name" required />
+                (Max 30 Characters Allowed)
+                </td>
+                </tr>
+                <!------------------------ Last Name --------------------------------------->
+                <tr>
+                <td><label for="fname">Father's Name</label> </td>
+                <td><input type="text" id="fname" name="fname" maxlength="30" placeholder="Enter Your Father Name"  required/>
+                (Max 30 Characters Allowed)
+                </td>
+                </tr>
+                <!-------------------------- Email ID ------------------------------------->
+                <tr>
+                <td> <label for="email">Email ID</label> </td>
+                <td><input type="email" id="email" name="email" maxlength="50" placeholder="example@gmail.com" required/></td>
+                </tr>
+                <!-------------------------- Mobile Number ------------------------------------->
+                <tr>
+                <td> <label for="phone">Mobile Number</label> </td>
+                <td>
+                <input type="number" id="phone" name="phone" maxlength="10"  placeholder="8523xxxxxx" required/>
+                (10 Digits Allowed) <br><br>
+                </td>
+                </tr>
+                <!---------------------- Gender ------------------------------------->
+                <tr>
+                <td> <label for="gender">Gender</label></td>
+                <td>
+                <input type="radio" name="gender" value="Male" />
+                Male
+                <input type="radio" name="gender" value="Female" />
+                Female
+                <input type="radio" name="gender" value="Female" />
+                Other <br> <br>
+                </td>
+                </tr>
+                <!--------------------------Date Of Birth----------------------------------->
+                <tr>
+                    <br><td> <label for="dob">Date Of Birth</label> </td>
+                    <td> <input type="date" id="dob" name="dob"> </td>
+                </tr>
+                <!------------------------- Address ---------------------------------->
+                <tr>
+                <td>Address<br /><br /><br /></td>
+                <td><textarea name="Address" rows="10" cols="50"></textarea></td>
+                </tr>
+                <!-------------------------- City ------------------------------------->
+                <tr>
+                <td><label for="city">City</label></td>
+                <td><input type="text" id="city" name="city" maxlength="50" placeholder="Bangalore"/>
+                (Max 50 Characters Allowed)
+                </td>
+                </tr>
+                <!----- -------------------- Pin Code-------------------------------------->
+                <tr>
+                <td> <label for="pin">Pin Code</label> </td>
+                <td><input type="number" id="pin" name="pin" maxlength="6" placeholder="24401"/>
+                (Max 6 Numbers Allowed)
+                </td>
+                </tr>
+                <!---------------------------- State ----------------------------------->
+                <tr>
+                <td> <label for="state">State</label> </td>
+                <td><input type="text" id="state" name="state" maxlength="50" placeholder="Karnataka"/>
+                (Max 50 Characters Allowed)
+                </td>
+                </tr>
+                <!------------------------------ Country --------------------------------->
+                <tr>
+                <td> <label for="country">Country</label> </td>
+                <td><input type="text" id="country" name="country" placeholder="India" /></td>
+                </tr>
+                <!------------------------- Hobbies -------------------------------------->
+                <tr>
+                <td>Hobbies <br /><br /><br /></td>
+                <td>
+                <input type="checkbox" name="HobbyDrawing" value="Drawing" />
+                Drawing
+                <input type="checkbox" name="HobbySinging" value="Singing" />
+                Singing
+                <input type="checkbox" name="HobbyDancing" value="Dancing" />
+                Dancing
+                <input type="checkbox" name="HobbyCooking" value="Cooking" />
+                Sketching
+                <br />
+                <input type="checkbox" name="HobbyOther" value="Other">
+                Others
+                <input type="text" name="Other_Hobby" maxlength="50" placeholder="Ex- Teaching" />
+                (Max 50 Characters Allowed)
+                </td>
+                </tr>
+
+                <br/><br/>
+                <!----------------------- Qualification--------------------------------------->
+               
+                
+                <!-----------------------Qualification---------------------------------------->
+                <tr>
+                <td>Highest <br/>Qualification<br/><br/><br/></td>
+                <td>
+                <br/>
+                <input type="checkbox" name="HighSchool" value="High School" />
+                High School(10th)<br>
+                <input type="checkbox" name="HigherSchool" value="Higher School" />
+                Higher School(12th)<br/>
+                <input type="checkbox" name="Graduation" value="Graduation" />
+                Graduation(Bachelors)<br/>
+                <input type="checkbox" name="PostGraduation" value="Post Graduation" />
+                Post Graduation(Masters)<br/>
+                <input type="checkbox" name="Phd" value="Phd">
+                Phd
+                </td>
+                </tr>
+                <br/><br/>
+                <!---------------------------- Courses ----------------------------------->
+                
+                <tr>
+                <td>Courses<br/>Applied For</td>
+                <td>
+                <br><br>
+                <input type="radio" name="CourseBCA" value="BCA">
+                BCA(Bachelor of Computer Applications)<br>
+                <input type="radio" name="CourseBCom" value="B.Tech">
+                B.Tech(Bachelor of Technology)<br>
+                <input type="radio" name="CourseBA" value="B.E">
+                B.E(Bachelor of Engineering)<br>
+                <input type="radio" name="CourseBSc" value="B.Sc">
+                B.Sc(Bachelor of Science)<br>
+                <input type="radio" name="CourseMCA" value="MCA">
+                MCA(Master of Computer Applications)<br>
+                <input type="radio" name="CourseMCom" value="M.tech">
+                M.Tech(Masters of Technology)<br>
+                <input type="radio" name="CourseMA" value="M.E">
+                M.E(Master of Engineering)<br>
+                <input type="radio" name="CourseMSc" value="M.Sc">
+                M.Sc(Master of Science)<br>
+                </td>
+                </tr>
+                <!----------------------- Submit and Reset ------------------------------->
+                <tr>
+                <td colspan="2" align="center">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                </td>
+                </tr>
+            </table>
+    </form>
+</body>
+</html>
