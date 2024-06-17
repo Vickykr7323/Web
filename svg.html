@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Property</title>
+</head>
+<body>
+    <h2> SVG Image Example</h2>
+    <p>SVG stands for Scalable Vector Graphic is a XML language used to make graphics and animations like in HTML canvas. It is a type of vector graphic that may be scaled up or down. SVG is a web standard for vector-based graphics. It is an XML format that defines graphics.</p>
+    <hr>
+        <svg width="100" height="100">
+            <circle
+                cx="50"
+                cy="50"
+                r="40"
+                fill="red"
+            />
+        </svg>
+        <br>
+        <h2>Animation</h2>
+        <svg viewBox="0 0 50 50">
+            <rect width="10" height="10" fill="green">
+                <animate attributeName="rx" values="0;20;0"
+                    dur="5s" repeatCount="10" />
+            </rect>
+        </svg>
+        <br>
+        <h2>Animation Polynomial</h2>
+        <hr>
+        <svg width="120" height="120"> 
+  
+            <polygon points="60,30 90,90 30,90"> 
+                <animateTransform attributeName="transform"
+                    attributeType="XML" type="rotate" 
+                    from="0 60 70" to="360 60 70"
+                    dur="10s" repeatCount="indefinite" /> 
+            </polygon> 
+        </svg>
+    </body>
+</html>
