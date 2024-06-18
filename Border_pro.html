@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.dotted {
+            border-style: dotted;
+            border-width: 2px;
+            border-color: green;
+        }
+        p.dashed {
+            border-style: dashed;
+            border-width: 25px 10px 4px 35px;;
+            color: red;
+        }
+        p.solid {
+            border-style: solid;
+            border-width: medium;
+            border-color: cyan;
+        }
+
+        p.double {
+            border-style: double;
+            border-width: thick;
+            border-color: yellow;
+        }
+        p.groove {
+            border-style: groove;
+            border-width: 5px;
+            border-color: #0000ff;
+        }
+        p.ridge {
+            border-style: ridge;
+            border-width: 3px 7px 10px;
+            border-color:rgb(255, 0, 0);;
+        }
+
+        p.inset {
+            border-style: inset;
+            border-width: 3px;
+            border-color: lawngreen;
+        }
+
+        p.outset {
+            border-style: outset;
+            border-width: 4px 6px;
+            border-color: red green blue yellow;;
+        }
+        p.none {
+            border-style: none;
+        }
+        p.hidden {
+            border-style: hidden;
+        }
+        p.mix {
+            border-style: dotted dashed solid double;
+            border-width: 3px;
+            border-color: hsl(0, 0%, 73%); ;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Border Style</h2>
+    <p>The border-style property specifies what kind of border to display.</p>
+
+    <p class="dotted">dotted - Defines a dotted border    </p>
+    <p class="dashed">dashed - Defines a dashed border    </p>
+    <p class="solid">solid - Defines a solid border  </p>
+    <p class="double">double - Defines a double border    </p>
+    <p class="groove">groove - Defines a 3D grooved border. The effect depends on the border-color value  </p>
+    <p class="ridge">ridge - Defines a 3D ridged border. The effect depends on the border-color value    </p>
+    <p class="inset">inset - Defines a 3D inset border. The effect depends on the border-color value </p>
+    <p class="outset">outset - Defines a 3D outset border. The effect depends on the border-color value   </p>
+    <p class="none">none - Defines no border</p>
+    <p class="hidden">hidden - Defines a hidden border</p>
+    <p class="mix">mixed - Defines a mixed border</p>
+</body>
+</html>
