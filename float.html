@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            float: right;
+        }
+        .img2{
+            float: left;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .img-container {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+   <h2>CSS Layout - float and clear</h2>
+   <p>The CSS float property specifies how an element should float.<br>
+    The CSS clear property specifies what elements can float beside the cleared element and on which side.</p> 
+    <h3>The float Property</h3>
+    <b>The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.</b> <br/><br/>
+    <p class="pro">left - The element floats to the left of its container
+        <br/>right - The element floats to the right of its container
+        <br/>none - The element does not float (will be displayed just where it occurs in the text). This is default
+        <br/>inherit - The element inherits the float value of its parent</p>
+        <h1>Float : Right</h1>
+        <p> <img src="nature.jpeg" height="200px" width="200px">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed est fugiat rem laudantium eum deserunt repellat. Expedita laudantium praesentium, adipisci consectetur temporibus rerum minima ab voluptas maiores ipsum repudiandae necessitatibus ex. Quas, culpa. Ut dolor, pariatur dicta doloribus error voluptas modi iste. Similique, magnam. Repellendus explicabo autem sed maiores?</p><br/><br/>
+        <h1>Float : left</h1>
+        <p > <img src="nature.jpeg" height="200px" width="200px" class="img2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed est fugiat rem laudantium eum deserunt repellat. Expedita laudantium praesentium, adipisci consectetur temporibus rerum minima ab voluptas maiores ipsum repudiandae necessitatibus ex. Quas, culpa. Ut dolor, pariatur dicta doloribus error voluptas modi iste. Similique, magnam. Repellendus explicabo autem sed maiores?</p><br/><br/><br><br/><br/>
+
+    <h2>Images Side by Side</h2>
+    <h3>Float images side by side:</h3>
+
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="nature2.jpeg" alt="Nature" style="width:100%">
+        </div>
+        
+        <div class="img-container">
+            <img src="flower.jpg" alt="Flower" style="width:100%">
+        </div>
+        <div class="img-container">
+            <img src="car2.jpeg" alt="Car" style="width:100%">
+        </div>
+    </div>
+
+    <p>Note that we also use the clearfix hack to take care of the layout flow, and that we add the box-sizing property to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+</body>
+</html>
