@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 20px;
+        }
+        .cal {
+            width: 320px;
+            height: 50px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 0;
+        }
+
+        .how{
+            color: red;
+            background-color: yellow;
+            margin: 25px;
+            padding: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The CSS Box Model</h1>
+    <p class="box">In CSS, the term "box model" is used when talking about design and layout.<br/><br/>
+        The CSS box model is essentially a box that wraps around every HTML element. 
+        <br/> <br/>It consists of: content, padding, borders and margins. </p>
+    <p class="part">Content - The content of the box, where text and images appear<br/>
+        Padding - Clears an area around the content. The padding is transparent<br/>
+        Border - A border that goes around the padding and content<br/>
+        Margin - Clears an area outside the border. The margin is transparent</p>
+    <br/><br/>
+    <p class="cal">
+        320px (width of content area)
+        + 20px (left padding + right padding) + 10px (left border + right border)
+    </p>
+    <strong>= 350px (total width)</strong>
+    <p class="cal">50px (height of content area)
+        + 20px (top padding + bottom padding) + 10px (top border + bottom border)</p>
+    <strong>= 80px (total height)</strong>
+    <p class="how">The total width of an element should be calculated like this:
+        Total element width = width + left padding + right padding + left border + right border <br/>       
+        The total height of an element should be calculated like this:        <br/>
+        Total element height = height + top padding + bottom padding + top border + bottom border</p>
+</body>
+</html>
