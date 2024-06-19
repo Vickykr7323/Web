@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }   
+        .container {
+            position: relative;
+            margin: 100px;
+        }
+        .container1{
+            position: relative;
+        }
+        .black-box {
+          position: relative;
+          border: 2px solid black;
+          height: 100px;
+          margin: 30px;
+        }
+        
+        .gray-box {
+          position: absolute;
+          background: lightgray;
+          height: 60px;
+          width: 70%;
+          left: 50px;
+          top: 50px;
+        }
+        
+        .green-box {
+          position: absolute;
+          background: lightgreen;
+          width: 35%;
+          left: 270px;
+          top: -15px;
+          height: 100px;
+        }
+
+        .black-box {
+            position: relative;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+
+        .gray-box {
+            position: absolute;
+            background: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+}
+
+        .green-box {
+            position: absolute;
+            background: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+        </style>
+</head>
+<body>
+
+    <h1>CSS Layout - The z-index Property </h1>
+    <b>The z-index property specifies the stack order of an element.</b><br/>
+    <b>The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).</b>
+    <img src="tree.png" alt="tree">
+    <p>Because the image has a z-index of -1, it will be placed behind the text.</p><br/><br/><br/>
+    <div class="container">
+        <div class="black-box">Black box</div>
+        <div class="gray-box">Gray box</div>
+        <div class="green-box">Green box</div>
+      </div>
+      <h2>Without z-index</h2>
+      <div class="container1">
+        <div class="black-box">Black box</div>
+        <div class="gray-box">Gray box</div>
+        <div class="green-box">Green box</div>
+      </div>
+      
+</body>
+</html>
