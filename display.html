@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li.inline {
+          display: inline;
+        }
+
+        li.block{
+            display: block;
+        }
+
+        .nav {
+            background-color: yellow; 
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+        }
+        </style>
+
+</head>
+<body>
+    <h2>CSS Layout - The display Property</h2>
+    <strong>The display property is the most important CSS property for controlling layout.
+    </strong><br/><br/>
+
+    <p class="what">The display property is used to specify how an element is shown on a web page.<br/>
+        Every HTML element has a default display value, depending on what type of element it is. <br/>
+        The default display value for most elements is block or inline.<br/>        
+        The display property is used to change the default display behavior of HTML elements.</p><br/><br/>
+    <h3>Block-level Elements</h3>
+    <b> div tag , h1 to h6 Tag , p Tag , form Tag , header Tag , footer Tag , section Tag</b>
+    <br/><br/>
+    <h3>Inline Elements</h3>
+    <b> span Tag , img Tag , a Tag</b>
+
+    <br/><br/>
+
+    <mark>Display a list of links as a horizontal menu ( inline dispaly )</mark>
+
+    <ul>
+        <li class ="inline"><a href="/html/default.asp" target="_blank">HTML</a></li>
+        <li class ="inline"><a href="/css/default.asp" target="_blank">CSS</a></li>
+        <li class ="inline"><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+    </ul>
+
+    <h1>Display span elements as block elements</h1><br/>
+
+    <ul>
+        <li class ="block"><a href="/html/default.asp" target="_blank">HTML</a></li>
+        <li class ="block"><a href="/css/default.asp" target="_blank">CSS</a></li>
+        <li class ="block"><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+    </ul>
+
+    <h2>CSS Layout - display: inline-block</h2>
+    <p class="use">Compared to display: inline, the major difference is that display: inline-block allows to set a   width and height on the element<br/><br/>
+        Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.<br/> <br/>
+        Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.</p>
+    <br/><br/>
+    <h2>Horizontal Navigation Links</h2>
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#clients">Our Clients</a></li>  
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>      
+        
+</body>
+</html>
