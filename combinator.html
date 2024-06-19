@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wh{
+            color: rgb(6, 218, 247);
+            background-color: blue;
+        }
+        div p {
+            background-color: yellow;
+        }
+
+        nav > p{
+            background-color: aqua;
+        }
+
+        .one + i {
+            color: white;
+            background-color: rgb(255, 6, 180);
+        }
+
+        .two ~ p { 
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Combinators</h1>
+    <b>A combinator is something that explains the relationship between the selectors.</b>
+    <h4>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</h4>
+    <p class="wh">There are four different combinators in CSS:<br>
+        <br>descendant selector (space) <br>child selector (>) <br>adjacent sibling selector (+) <br>general sibling selector (~)</p>
+    <div>
+        <p>Paragraph 1 in the nav.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section><p>Paragraph 3 in the div.</p></section>
+        
+    </div> 
+    <p>Paragraph 4. Not in a div.</p>         
+    <p>Paragraph 5. Not in a div.</p>
+    <br><br>
+
+    <h2>Child Selector (>)</h2>
+    <b>the child selector selects all elements that are the children of a specified element.</b>
+    <nav>
+        <p>Paragraph 1 in the nav.</p>
+        <p>Paragraph 2 in the nav.</p>
+        <section><p>Paragraph 3 in the nav.</p></section>
+        <p>Paragraph 4.  in a nav.</p>
+    </nav>
+    
+    <p>Paragraph 5. Not in a nav.</p><br><br>
+
+    <div class="one">
+        <h2>Adjacent Sibling Selector (+)</h2>
+        <i>The adjacent sibling selector is used to select an element that is directly after another specific element.<br>Sibling elements must have the same parent element, and "adjacent" means "immediately following".</i>
+    </div>
+    <i>I am italic tag</i>
+
+    <br><br>
+    <h2>General Sibling Selector (~)</h2>
+    <b>
+        The general sibling selector selects all elements that are next siblings of a specified element.
+    </b>
+
+    <div class="two">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cum nam similique, iste quaerat esse laudantium rerum? Ipsam, iusto illum.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi voluptate ad enim deleniti? Aut temporibus perspiciatis culpa, hic vel, inventore architecto voluptatem aliquid maxime deleniti sequi iste cumque voluptas iusto.</p>
+    <i>What are you doing ?</i>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, itaque!</p>
+</body>
+</html>
